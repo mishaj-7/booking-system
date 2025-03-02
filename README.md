@@ -30,7 +30,18 @@ The goal of this project was to create a functional booking system using minimal
 
 ## Project Structure
 
-BOOKING-SYSTEM/ ├── backend/ # Django backend │ ├── appointments/ # Main app (settings, URLs) │ ├── booking/ # Booking app (models, views, URLs) │ ├── db.sqlite3 # SQLite database │ ├── manage.py # Django management script │ └── requirements.txt # Python dependencies ├── frontend/ # Frontend files │ ├── index.html # Main page │ ├── styles.css # Styling │ └── script.js # Logic for API calls and UI updates └── README.md # This documentation
+BOOKING-SYSTEM/
+├── backend/ # Django backend
+│ ├── appointments/ # Main app (settings, URLs)
+│ ├── booking/ # Booking app (models, views, URLs)
+│ ├── db.sqlite3 # SQLite database
+│ ├── manage.py # Django management script
+│ └── requirements.txt # Python dependencies
+├── frontend/ # Frontend files
+│ ├── index.html # Main page
+│ ├── styles.css # Styling
+│ └── script.js # Logic for API calls and UI updates
+└── README.md # This documentation
 
 yaml
 Copy
@@ -60,7 +71,7 @@ Create a Virtual Environment (optional but recommended):
 bash
 Copy
 python -m venv venv
-source venv/bin/activate  
+source venv/bin/activate
 Install Dependencies:
 bash
 Copy
@@ -85,3 +96,4 @@ Copy
 cd frontend
 python3 -m http.server 8001
 This will run the frontend at http://127.0.0.1:8001/.
+```
