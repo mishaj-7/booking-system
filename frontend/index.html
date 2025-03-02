@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Booking System</h1>
+
+        <!-- Date picker to fetch available slots -->
+        <section class="slot-checker">
+            <h2>Check Available Slots</h2>
+            <label for="dateInput">Select Date:</label>
+            <input type="date" id="dateInput" required>
+            <button onclick="fetchSlots()">Show Available Slots</button>
+            <ul id="slotList"></ul>
+        </section>
+
+        <!-- Form to book an appointment -->
+        <section class="booking-form">
+            <h2>Book an Appointment</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time Slot:</label>
+                <select id="time" name="time" required>
+                    <option value="10">Select time</option>
+                </select>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
